@@ -2,14 +2,25 @@
     box-sizing: border-box;
 }
 
+html {
+  height: 100vh;
+}
 #container {
+    border-style: dotted;
     display: flex;
     flex-wrap: wrap;
-}
+    width: 43vw;
+    height: 86.5vh;
+    margin-left: 25%;
+  }
 #container div {
   background: white;
-  border: 1px solid black;
-  height: 40px;
-  width: 80px;
+  border: 1px solid orange;
+  height: 35px;
+  width: 35px;
   flex: auto;
+}
+.button {
+background-color: blueviolet;
+border-radius: 20%;
 }

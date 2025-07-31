@@ -3,14 +3,21 @@ const container = document.getElementById("container");
 
 const btn = document.querySelector("button");
 btn.addEventListener("click",() => {
-    let squares = prompt("how many squares per side?");
+    let squares = prompt("how many squares per side? (Max 100)");
+    
     for (let i = 1; i <= squares*squares; i++) {
         const div = document.createElement("div");
         container.appendChild(div);
         div.classList.add(i);
+
+        let calc = 1/squares*100;
+        let percent = calc + "%";
+        div.style.width = percent;
+        div.style.height = percent;
     };
 
-    const grid = document.querySelectorAll("#container div");
+
+const grid = document.querySelectorAll("#container div");
 
 grid.forEach((div) => {
     div.addEventListener("mouseenter", () => {
@@ -19,3 +26,9 @@ grid.forEach((div) => {
 }) ;
 })
 
+
+// Prochaine recherche : comment limiter le prompt input à 100?
+// puis comment fixer les dimensions du container 
+// et faire flex les petis carrés à l'intérieur (en hauteur et largeur).
+// !!! quand je clique une 2e fois sur creer grille et je mets numero,
+//ça crèe une grille en bas au lieu de le faire dans le container

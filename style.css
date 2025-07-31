@@ -10,16 +10,15 @@ html {
     display: flex;
     flex-wrap: wrap;
     width: 43vw;
-    height: 86.5vh;
+    height: 86.3vh;
     margin-left: 25%;
   }
 #container div {
   background: white;
   border: 1px solid orange;
-  height: 35px;
-  width: 35px;
-  flex: auto;
+  flex: none;
 }
+
 .button {
 background-color: blueviolet;
 border-radius: 20%;

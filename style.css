@@ -20,6 +20,7 @@ html {
 }
 
 .button {
-background-color: blueviolet;
-border-radius: 20%;
+color: white;
+background-color: black;
+border-radius: 15%;
 }

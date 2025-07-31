@@ -35,7 +35,3 @@ grid.forEach((div) => {
     });
 }) ;
 })
-
-
-// Prochaine recherche : comment limiter le prompt input à 100?
-// et faire flex les petis carrés à l'intérieur (en hauteur et largeur).

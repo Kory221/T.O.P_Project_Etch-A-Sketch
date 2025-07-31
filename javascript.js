@@ -9,7 +9,12 @@ btn.addEventListener("click",() => {
     })
     
     let squares = prompt("how many squares per side? (Max 100)");
-        
+     
+    if (squares > 100 || squares <= 0) {
+        squares = 0;
+        alert ("please choose a number between 1 and 100 (inclued)")
+    }
+    
     for (let i = 1; i <= squares*squares; i++) {
         const div = document.createElement("div");
         container.appendChild(div);
@@ -34,5 +39,3 @@ grid.forEach((div) => {
 
 // Prochaine recherche : comment limiter le prompt input à 100?
 // et faire flex les petis carrés à l'intérieur (en hauteur et largeur).
-// !!! quand je clique une 2e fois sur creer grille et je mets numero,
-//ça crèe une grille en bas au lieu de le faire dans le container

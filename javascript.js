@@ -29,9 +29,11 @@ btn.addEventListener("click",() => {
 
 const grid = document.querySelectorAll("#container div");
 
+let darkness = 0.1;
 grid.forEach((div) => {
     div.addEventListener("mouseenter", () => {
-        div.style.background = "RGB("+Math.random()*255+","+Math.random()*255+","+Math.random()*255+")";
+        div.style.background = "RGB("+Math.random()*255+","+Math.random()*255+","+Math.random()*255+","+darkness+")";
+        darkness += 0.1;
     });
 }) ;
 })

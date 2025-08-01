@@ -31,7 +31,7 @@ const grid = document.querySelectorAll("#container div");
 
 grid.forEach((div) => {
     div.addEventListener("mouseenter", () => {
-        div.style.background = "black";
+        div.style.background = "RGB("+Math.random()*255+","+Math.random()*255+","+Math.random()*255+")";
     });
 }) ;
 })

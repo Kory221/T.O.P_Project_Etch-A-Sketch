@@ -19,5 +19,7 @@ Transform the behavior of a square when interacting with the mouse by introducin
 
 You can choose to do either one or both of these challenges, it’s up to you.
 
+You can see the result (web page) here : http://kory221.github.io/T.O.P_Project_Etch-A-Sketch
+
 Link to the page (The Odin Project) 
 https://www.theodinproject.com/lessons/foundations-etch-a-sketch 
